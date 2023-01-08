@@ -1,0 +1,91 @@
+section{
+    .container{
+        padding: 10px;
+        max-width: 1440px;
+        width: 100%;
+        height: 100vh;
+        background: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+        background-color: rgba(25, 161, 174, 1);
+        background-repeat: no-repeat;
+        background-position: left -415.84px   top -453.71px , right -339px  bottom -648px  ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            max-width: 350px;
+            width: 100%;
+            height: 374px;
+            background-color: #FFFFFF;
+            border-radius: 15px;
+            .card-head{
+                width: 100%;
+                border-radius: 15px 15px 0 0;
+                overflow: hidden;
+                margin-bottom: 68px;
+                
+                .avatar {
+                    position: absolute;
+                    top: 92px;
+                    left: 50%;
+                    transform: translate(-50% );
+                    img{
+                        border: 5px solid #FFFFFF;
+                        border-radius: 50%;
+                    }
+                    
+                }
+
+            }
+            .userinfo{
+                display: flex;
+                align-items: center;
+                margin-bottom: 13px;
+                h3{
+                    margin-right: 8.5px;
+                    color: #2E3349;
+                    @include text;
+                }
+                h4{
+                    @include text ($weight: 400);
+                    color: #6B7082;
+                }
+
+
+            }
+            .city{
+                color: rgba(107, 112, 130, 1);
+                @include text($size:14px , $weight:400);
+                margin-bottom:28px;
+            }
+            .card-border-line{
+                background-color: rgba(232, 233, 236, 1);
+                width: 100%;
+                height: 1px;
+                margin-bottom: 24px;
+            }
+            .rating{
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                .Followers ,.Likes , .Photos{
+                    text-align: center;
+                    h2{
+                        @include text;
+                        color: #2E3349;
+                        margin-bottom: 9px;
+                    }
+                    h4{
+                        @include text ($size:10px ,$weight:400);
+                        color:#6B7082;
+                    }
+                }
+            }
+        }
+    } 
+}
+

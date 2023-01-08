@@ -1,0 +1,151 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+section .container {
+  padding: 10px;
+  max-width: 1440px;
+  width: 100%;
+  height: 100vh;
+  background: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+  background-color: rgb(25, 161, 174);
+  background-repeat: no-repeat;
+  background-position: left -415.84px top -453.71px, right -339px bottom -648px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .container .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  max-width: 350px;
+  width: 100%;
+  height: 374px;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+}
+section .container .card .card-head {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  overflow: hidden;
+  margin-bottom: 68px;
+}
+section .container .card .card-head .avatar {
+  position: absolute;
+  top: 92px;
+  left: 50%;
+  transform: translate(-50%);
+}
+section .container .card .card-head .avatar img {
+  border: 5px solid #FFFFFF;
+  border-radius: 50%;
+}
+section .container .card .userinfo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 13px;
+}
+section .container .card .userinfo h3 {
+  margin-right: 8.5px;
+  color: #2E3349;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Kumbh Sans", sans-serif;
+}
+section .container .card .userinfo h4 {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Kumbh Sans", sans-serif;
+  color: #6B7082;
+}
+section .container .card .city {
+  color: rgb(107, 112, 130);
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Kumbh Sans", sans-serif;
+  margin-bottom: 28px;
+}
+section .container .card .card-border-line {
+  background-color: rgb(232, 233, 236);
+  width: 100%;
+  height: 1px;
+  margin-bottom: 24px;
+}
+section .container .card .rating {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+section .container .card .rating .Followers, section .container .card .rating .Likes, section .container .card .rating .Photos {
+  text-align: center;
+}
+section .container .card .rating .Followers h2, section .container .card .rating .Likes h2, section .container .card .rating .Photos h2 {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Kumbh Sans", sans-serif;
+  color: #2E3349;
+  margin-bottom: 9px;
+}
+section .container .card .rating .Followers h4, section .container .card .rating .Likes h4, section .container .card .rating .Photos h4 {
+  font-size: 10px;
+  font-weight: 400;
+  font-family: "Kumbh Sans", sans-serif;
+  color: #6B7082;
+}/*# sourceMappingURL=global.css.map */
